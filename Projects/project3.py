@@ -54,17 +54,18 @@ window.tracer(0)
 # Section 2 - Your code
 set_background("spring")
 
-draw_rectangle("pink"), 100, 100, 200, 200
-draw_rectangle("orange"), -100, 100, 200, 200
-draw_rectangle("orange"), 100, -100, 200, 200
-draw_rectangle("pink"), 100, -100, 200, -200
+draw_rectangle("pink", 100, 100, 200, 200)
+draw_rectangle("orange", -100, 100, 200, 200)
+draw_rectangle("pink", -100, -100, 200, 200)
+draw_rectangle("orange", 100, -100, 200, 200)
 
-s1 = create_sprite("Man City.gif", 100, 100)
-s2 = create_sprite("Milwaukee_Bucks_logo.svg.gif", -100, -100)
+s1 = create_sprite("ManchesterCity", 100, 100)
+s2 = create_sprite("Milwaukee_Bucks_logo.svg", -100, -100)
+s3 = create_sprite("Padres, -100, 100")
 
 message1 = create_sprite("alien",-200,200)
 message1.color("red")
-message1.write("Your Name",font = ("Arial", 40, "normal"))
+message1.write("Deco",font = ("Arial", 40, "normal"))
 message1.hideturtle()
 
 

@@ -46,6 +46,4 @@ if introvert_points > extrovert_points:
 	print("you are an introvert!!")
 if extrovert_points > introvert_points:
 	print("you are an extrovert!!")
-if extrovert_points = introvert_points:
-	print("you are neither!!")
 print("thanks for listening")
