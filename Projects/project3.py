@@ -54,19 +54,27 @@ window.tracer(0)
 # Section 2 - Your code
 set_background("spring")
 
+#these are the colors of the squares
+
 draw_rectangle("pink", 100, 100, 200, 200)
 draw_rectangle("orange", -100, 100, 200, 200)
 draw_rectangle("pink", -100, -100, 200, 200)
 draw_rectangle("orange", 100, -100, 200, 200)
-
+#these are all the sprites
 s1 = create_sprite("ManchesterCity", 100, 100)
 s2 = create_sprite("Milwaukee_Bucks_logo.svg", -100, -100)
-s3 = create_sprite("Padres, -100, 100")
-
+s3 = create_sprite("Padres", -100, 100)
+s4 = create_sprite("images", 100, -100)
+#heres where the text is created
 message1 = create_sprite("alien",-200,200)
 message1.color("red")
 message1.write("Deco",font = ("Arial", 40, "normal"))
 message1.hideturtle()
+
+message2 = create_sprite("alien",-200,-200)
+message2.color("red")
+message2.write("Go Bucks",font = ("Arial", 40, "normal"))
+message2.hideturtle()
 
 
 ######################################################################

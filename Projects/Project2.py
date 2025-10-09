@@ -10,7 +10,7 @@ elif answer == "B":
 print
 
 answer = input("Would you rather A spend time alone, or B spend time in a group")
-if answer == "A":
+if answer == "A" or answer == "a":
 	introvert_points += 1
 elif answer == "B":
 	extrovert_points += 1
@@ -38,12 +38,11 @@ elif answer == "B":
 	
 
 answer = input("Do you prefer A make decisions in private, or B make decisions in a group setting")
-if answer == "A":
+if answer == "A" and introvert_points > 3:
+	print("you are an introvert")
 	introvert_points += 1
-elif answer == "B":
+if answer == "B" and extrovert_points > 3:
+	print("You are an extrovert")
 	extrovert_points += 1
-if introvert_points > extrovert_points:
-	print("you are an introvert!!")
-if extrovert_points > introvert_points:
-	print("you are an extrovert!!")
-print("thanks for listening")
+
+
