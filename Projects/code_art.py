@@ -10,6 +10,7 @@ for i in range (500):
     t.forward(100 + i)
     t.left(127)
     #comment: this is were the sprite makes the first shape
+    #comment: made so that it repeated less
 
 import turtle 
 t2 = turtle.Turtle()
